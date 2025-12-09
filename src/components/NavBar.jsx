@@ -32,7 +32,8 @@ const NavBar = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('user');
     // Redirect to Auth App login page with logout param to clear Auth session
-    window.location.replace('http://localhost:8081/auth?logout=true');
+    const authUrl = import.meta.env.VITE_AUTH_URL || 'http://localhost:8081';
+    window.location.replace(`${authUrl}/auth?logout=true`);
   };
 
   return (

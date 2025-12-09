@@ -28,7 +28,8 @@ const App = () => {
     const token = localStorage.getItem('token');
     if (!token) {
       // Not logged in? Redirect to Auth App immediately
-      window.location.href = 'http://localhost:8081';
+      const authUrl = import.meta.env.VITE_AUTH_URL || 'http://localhost:8081';
+      window.location.href = authUrl;
       return;
     }
 
