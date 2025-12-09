@@ -1,0 +1,30 @@
+# Node modules & logs
+**/node_modules/
+**/npm-debug.log
+**/.npm
+
+# Build output
+**/dist/
+**/build/
+
+# Development files
+**/.git/
+**/.gitignore
+**/.env
+**/.env.*
+**/.editorconfig
+**/.vscode/
+**/README.md
+**/*.md
+**/tests/
+
+# Docker files
+**/Dockerfile*
+**/.dockerignore
+**/docker-compose*.yml
+
+# Temp files
+**/*.log
+**/.DS_Store
+**/coverage/
+**/.coverage/
